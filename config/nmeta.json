@@ -1,0 +1,6 @@
+{
+  "db":{
+    "url": "postgres://nmeta:nmetanmeta@127.0.0.1:5432/nmeta"
+  }
+}
+

@@ -1,0 +1,19 @@
+{
+  "appenders": [
+    {
+      "category": "nmeta",
+      "type": "dateFile",
+      "level": "INFO",
+      "backups": 3,
+      "filename": "logs/nmeta.log",
+      "pattern": "-yyyy-MM-dd"
+    },{
+      "type":"console",
+      "level": "DEBUG",
+      "layout":{
+        "type": "pattern",
+        "pattern": "[%r] [%[%5.5p%]] - %m%n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+extends layout
+
+block include
+  script(src='/js/main.js')
+
+block content
+  h1 nmeta
+  h2 users
+  div export
+    a(class="export" href="/data/users.json") json
+    a(class="export" href="/data/users.csv") csv
+  div(id="users" style="width: 100%; height: 300px;")

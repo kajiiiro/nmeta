@@ -1,0 +1,65 @@
+[2015-07-01 13:50:04.371] [DEBUG] nmeta - { cmd: 'get-records', selected: [], limit: 100, offset: 0 } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:50:04.385] [DEBUG] nmeta - select * from users limit 100  at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:50:04.391] [ERROR] nmeta - { [error: リレーション"users"は存在しません]
+  name: 'error',
+  length: 111,
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '15',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '894',
+  routine: 'parserOpenTable',
+  status: 500 }
+error: リレーション"users"は存在しません
+    at Connection.parseE (/root/nmeta/node_modules/pg/lib/connection.js:539:11)
+    at Connection.parseMessage (/root/nmeta/node_modules/pg/lib/connection.js:366:17)
+    at Socket.<anonymous> (/root/nmeta/node_modules/pg/lib/connection.js:105:22)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+    at TCP.onread (net.js:538:20) 'at <anonymous> (/root/nmeta/app.js:67:14)'
+[2015-07-01 13:53:02.487] [DEBUG] nmeta - { cmd: 'get-records', selected: [], limit: 100, offset: 0 } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:53:02.491] [DEBUG] nmeta - select * from users limit 100  at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:53:26.990] [DEBUG] nmeta - { cmd: 'save-records',
+  selected: [ 'd55a1e27-ae93-4d75-bcf9-017d111f5989' ],
+  limit: 100,
+  offset: 0,
+  changes: 
+   [ { recid: 'd55a1e27-ae93-4d75-bcf9-017d111f5989',
+       name: '',
+       age: '1' } ] } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:53:26.995] [DEBUG] nmeta - update users set name = null,age = '1' where recid = 'd55a1e27-ae93-4d75-bcf9-017d111f5989' at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:53:29.101] [DEBUG] nmeta - { cmd: 'get-records', selected: [], limit: 100, offset: 0 } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:53:29.103] [DEBUG] nmeta - select * from users limit 100  at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:54:34.423] [DEBUG] nmeta - { cmd: 'get-records', selected: [], limit: 100, offset: 0 } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:54:34.437] [DEBUG] nmeta - select * from users limit 100  at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:54:39.781] [DEBUG] nmeta - { cmd: 'save-records',
+  selected: [ 'd55a1e27-ae93-4d75-bcf9-017d111f5989' ],
+  limit: 100,
+  offset: 0,
+  changes: [ { recid: 'd55a1e27-ae93-4d75-bcf9-017d111f5989', name: 'aaa' } ] } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:54:39.785] [DEBUG] nmeta - update users set name = 'aaa' where recid = 'd55a1e27-ae93-4d75-bcf9-017d111f5989' at <anonymous> (/root/nmeta/routes/data.js:105:13)
+[2015-07-01 13:54:50.640] [ERROR] nmeta - { [Error: Not Found] status: 404 }
+Error: Not Found
+    at /root/nmeta/app.js:45:13
+    at Layer.handle [as handle_request] (/root/nmeta/node_modules/express/lib/router/layer.js:82:5)
+    at trim_prefix (/root/nmeta/node_modules/express/lib/router/index.js:302:13)
+    at /root/nmeta/node_modules/express/lib/router/index.js:270:7
+    at Function.proto.process_params (/root/nmeta/node_modules/express/lib/router/index.js:321:12)
+    at next (/root/nmeta/node_modules/express/lib/router/index.js:261:10)
+    at /root/nmeta/node_modules/express/lib/router/index.js:603:15
+    at next (/root/nmeta/node_modules/express/lib/router/index.js:246:14)
+    at Function.proto.handle (/root/nmeta/node_modules/express/lib/router/index.js:166:3)
+    at router (/root/nmeta/node_modules/express/lib/router/index.js:35:12) 'at <anonymous> (/root/nmeta/app.js:67:14)'
+[2015-07-01 13:54:54.182] [DEBUG] nmeta - { cmd: 'get-records', selected: [], limit: 100, offset: 0 } 'at <anonymous> (/root/nmeta/routes/data.js:101:11)'
+[2015-07-01 13:54:54.184] [DEBUG] nmeta - select * from users limit 100  at <anonymous> (/root/nmeta/routes/data.js:105:13)
